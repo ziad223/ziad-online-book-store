@@ -103,4 +103,22 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
    font-size: 20px;
 }
     
+    .arrow-left,
+.arrow-right{
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+}
+.slide-info-wrapper{
+    margin-bottom: 20px;
+}
+
+
+.slide-info-title{
+    font-size: 18px;
+}
+.slide-info-desc{
+   font-size: 17px;
+}
+    
 }
