@@ -147,7 +147,9 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
+.cart-item img{
+    margin: auto;
+}
     .cart-wrapper {
         justify-content: center;
         align-items: center;
@@ -161,4 +163,45 @@
     .cart {
         padding: 15px;
     }
+    .cart-item-info {
+ flex-direction: column;
+    }
+
+.cart-item-book-title {
+    font-size: 18px;
+}
+
+.cart-item-author {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-item-quantity {
+    font-size: 20px;
+}
+
+.cart-item-quantity button {
+    font-size: 15px;
+}
+
+
+.cart-item-quantity b {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.cart-item-price {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-solid.fa-trash {
+    color: crimson;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+}
 }
