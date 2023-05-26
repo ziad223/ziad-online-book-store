@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './header.css';
 import {BsBook , BsCart} from 'react-icons/bs';
 import Navbar from './Navbar';
@@ -6,12 +6,13 @@ import {Link} from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 
 const Header = () => {
-  const [navMenu , setNavMenu] = useState(true)
+  const [navMenu , setNavMenu] = useState(true);
   const {cartItemsLength} =  useContext(CartContext);
 
   const navbarToggle = () =>{
     setNavMenu(!navMenu);
   }
+
   return (
     <header className='header'>
       
@@ -20,7 +21,7 @@ const Header = () => {
          <div className="header-top-text">Welcome To Ziad Online Book Store</div> 
             <div className="header-top-phone"><i class="fa-solid fa-phone"></i> 01288486337 </div>
             <div className="header-top-menu"> <i onClick={navbarToggle} className="fa-solid fa-bars"></i></div>
-
+            
 {!navMenu  &&(
   <div className='navbar-mobile'>
    <div className="navbar-links">
@@ -33,9 +34,8 @@ const Header = () => {
   </div>
 )
 }
-
          </div>
-
+         <h2 className='mob-title'>Welcome To Ziad Online Book Store</h2>
          <div className="header-middle">
           <div className="header-middle-logo">Book<BsBook className='header-book-icon'/>Store</div>
           <div className="header-middle-search-box">
