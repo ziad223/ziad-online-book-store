@@ -1,0 +1,121 @@
+.book-slider-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 10px 20px 20px 20px;
+}
+.book-slider-arrow-left,
+.book-slider-arrow-right{
+    width: 50px;
+    height: max-content ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    background-color: #222;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 32px;
+    align-items: center;
+}
+.book-slider-arrow-left{
+    left: 10px;
+}
+.book-slider-arrow-right{
+    right: 10px;
+}
+.book-slider-wrapper{
+    height: 100%;
+    display: flex;
+    transition: all 0.5 ease;
+}
+.book-slide-item{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: snow;
+    margin: 0 10px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transition:all 0.5s ease;
+
+}
+.book-slide-item-img{
+    width: 60%;
+    object-fit: contain;
+}
+.book-slide-item-title{
+    font-size: 18px;
+}
+.book-slide-item-price{
+    color: crimson;
+    font-weight: bold;
+    font-size: 21px;
+}
+.book-slider-icons-wrapper{
+    border-top: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    transition:all 0.5s ease;
+}
+.book-slider-icons-wrapper i{
+    font-size: 27px;
+    cursor: pointer;
+    margin: 0px 5px;
+    color: rgb(67, 67, 67);
+}
+.cion{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.rating {
+    color: rgb(255, 218, 9);
+}
+
+.rating i {
+    font-size: 21px;
+    margin-right: 4px;
+}
+
+.rating span:first-of-type {
+    font-weight: 500;
+    margin: 0 10px;
+    color: var(--primary-text-color);
+}
+
+.rating span:last-of-type {
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width : 480px) {
+    .book-slider-icons-wrapper{
+        max-width: 70%;
+        margin: auto;
+        transition:all 0.5s ease;
+    }
+    .book-slide-item{
+        margin: 0 10px;
+        max-width: 100%;
+        display: flex;
+    
+    }
+}
+

@@ -1,0 +1,19 @@
+:root{
+    --main-color : #efefef;
+    --primary-color : #1976d2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+ul{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
