@@ -39,6 +39,10 @@
 
 /*  Header Middle */
 
+.mob-title{
+    display: none;
+}
+
 .header-middle{
     display: flex;
     align-items: center;
@@ -65,6 +69,7 @@
     border-radius: 50px;
     overflow: hidden;
     position: relative;
+    margin: 0;
 }
 .header-search-input{
     width: 100%;
@@ -168,6 +173,8 @@ color: rgb(22, 99, 167);
 }
 
 
+
+
 /* Media Query */
 
 @media screen and (max-width : 990px){
@@ -214,6 +221,14 @@ color: rgb(22, 99, 167);
 }
 
 @media screen and (max-width : 480px) {
+    .mob-title{
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
     .header-top-phone{
         font-size: 20px;
     }
