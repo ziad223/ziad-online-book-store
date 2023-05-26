@@ -224,7 +224,7 @@ color: rgb(22, 99, 167);
         font-size: 20px;
     }
     .header-middle-search-box{
-        width: 70%;
+        width: 80%;
     }
     .header-search-input{
         font-size: 20px;
@@ -232,7 +232,7 @@ color: rgb(22, 99, 167);
     .header-middle-search-box .fa-magnifying-glass{
         position: absolute;
         top: 20px;
-        font-size: 25px;
+        font-size: 20px;
     }
     .header-middle-cart-wrapper .cart-notification{
         width: 20px;
