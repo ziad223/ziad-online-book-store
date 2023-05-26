@@ -92,7 +92,7 @@
 }
 .header-middle-cart-wrapper .cart-notification{
     position: absolute;
-    top: 0;
+    top: -8;
     right: 0;
     width: 24px;
     height: 24px;
@@ -202,6 +202,12 @@
         top: 20px;
         font-size: 25px;
     }
+    .header-middle-cart-wrapper .cart-notification{
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
     .header-middle-cart-wrapper {
        font-size: 35px;    
     }
@@ -211,4 +217,5 @@
         font-weight: 400;
         cursor: pointer;
     }
+ 
 }
